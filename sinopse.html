@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Autoplex</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>  
+</head>
+<body>
+
+    <header>
+        <h1>Rede de Cinemas Autoplex</h1>
+        <h2>Bilheteria</h2>
+    </header> 
+
+    <section>
+
+        <div id="div_titulo">
+            <p>Confira as sinopses dos nossos filmes em exibição:</p>    
+         </div>
+
+        <h3>Mulher-Maravilha 1984</h3>
+
+        <div id = "div_img1">
+            <img id = "img1" src = "img/ww84.jpg">
+        </div>
+
+        <div id = "msg_sinopse1">
+            <p>Na década de 80, a próxima aventura da Mulher Maravilha no grande ecrã a encontra em que ela enfrenta seus dois novos inimigos: Max Lord e Barbara Minerva/Cheetah.<br><br></p>
+        </div>
+
+        <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/XW2E2Fnh52w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>Convenção das Bruxas</h3>
+        
+        <div id = "div_img2">
+            <img id = "img2" src = "img/convencao.jpg">
+        </div>
+
+        <div id = "msg_sinopse2">
+            <p>Um menino descobre uma conferência de bruxas enquanto fica hospedado em um hotel com a avó.<br><br></p>
+        </div>
+
+        <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/whAEYgJlaek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>Sapatinho Vermelho e Os Sete Anões</h3>
+
+        <div id = "div_img3">
+            <img id = "img3" src = "img/sapatinho.jpg">
+        </div>
+
+        <div id = "msg_sinopse3">
+            <p>Sete anões, que na verdade são príncipes, brigam pelo beijo da princesa de sapatos vermelhos.</p>
+        </div>
+        
+        <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/X9eJG6n20SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div id="div_botao">
+            <p>
+                <input type = "button" value = "Compre seu ingresso!" id="btnRedirecionamento" onclick="redirecionar()">
+            </p>
+        </div>
+
+
+    </section>
+
+    <footer><br>&copy; Autoplex - Rede de Cinemas</footer>
+
+    <script>
+        function redirecionar(){
+            window.location.href = "cinema.html"
+        }
+    </script>
+
+</body>
+</html>
