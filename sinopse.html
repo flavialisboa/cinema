@@ -1,76 +1,185 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
-    <title>Autoplex</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>  
+    <title>Sinopse - Autoplex &#128253;</title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
-        <h1>Rede de Cinemas Autoplex</h1>
-        <h2>Bilheteria</h2>
-    </header> 
+        <div class="caixa">
+            <h1>
+                <a href="index.html">
+                    <img alt="Logo autoplex na cor lilás" src="img/autoplex.png" width="150" height="25" id="logo">
+            </h1>
 
-    <section>
+            <nav>
+                <ul>
+                    <li><a href="sinopse.html">Filmes</a></li>
+                    <li><a href="bilheteria.html">Bilheteria</a></li>
+                    <li><a href="precos.html">Preços</a></li>
+                    <li><a href="protocolos.html">Protocolos de Segurança</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <div id="div_titulo">
-            <p>Confira as sinopses dos nossos filmes em exibição:</p>    
-         </div>
+    <main class="main-sinopse">
 
-        <h3>Mulher-Maravilha 1984</h3>
-
-        <div id = "div_img1">
-            <img id = "img1" src = "img/ww84.jpg">
+        <div class="cartaz">
+            <img src="img/claquete.png" id="claquete">
+            <p id="em-cartaz">Em cartaz</p>
         </div>
 
-        <div id = "msg_sinopse1">
-            <p>Na década de 80, a próxima aventura da Mulher Maravilha no grande ecrã a encontra em que ela enfrenta seus dois novos inimigos: Max Lord e Barbara Minerva/Cheetah.<br><br></p>
-        </div>
+        <section class="filmes-escolha-principal">
+            <div class="filme-escolha">
+                <ul class="container-filme">
+                    <li>
+                        <a href="#filme1">
+                            <img src="img/filmes/ww84-icone.jpg" alt="" class="box-filmes">
+                        </a>
+                        <p class="titulo-filmes">Mulher-Maravilha 1984</p>
+                    </li>
+                    <li>
+                        <a href="#filme2">
+                            <img src="img/filmes/meu-pai-icone.jpg" alt="" class="box-filmes">
+                        </a>
+                        <p class="titulo-filmes">Meu Pai</p>
+                    </li>
+                    <li>
+                        <a href="#filme3">
+                            <img src="img/filmes/pinoquio-icone.jpg" alt="" class="box-filmes">
+                        </a>
+                        <p class="titulo-filmes">Pinóquio</p>
+                    </li>
+                    <li>
+                        <a href="#filme4">
+                            <img src="img/filmes/convencao.jpg" alt="" class="box-filmes">
+                        </a>
+                        <p class="titulo-filmes">Convenção das Bruxas</p>
+                    </li>
+                    <li>
+                        <a href="#filme5">
+                            <img src="img/filmes/raya-icone.jpg" alt="" class="box-filmes">
+                        </a>
+                        <p class="titulo-filmes">Raya e o Último Dragão</p>
+                    </li>
+                    <li>
+                        <a href="#filme6">
+                            <img src="img/filmes/alto-icone.jpg" alt="" class="box-filmes">
+                        </a>
+                        <p class="titulo-filmes">O Alto da Boa Mentira</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/XW2E2Fnh52w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="img/filmes/minari-banner.jpg" alt="" id="banner">
 
-        <h3>Convenção das Bruxas</h3>
-        
-        <div id = "div_img2">
-            <img id = "img2" src = "img/convencao.jpg">
-        </div>
+        <section class="corpo">
 
-        <div id = "msg_sinopse2">
-            <p>Um menino descobre uma conferência de bruxas enquanto fica hospedado em um hotel com a avó.<br><br></p>
-        </div>
+            <div id="div_titulo">
+                <p>Confira as sinopses dos nossos filmes em exibição:</p>
+            </div>
 
-        <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/whAEYgJlaek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="sinopse-box" id="filme1">
+                <h3 class="titulo-sinopse">Mulher-Maravilha 1984</h3>
 
-        <h3>Sapatinho Vermelho e Os Sete Anões</h3>
-
-        <div id = "div_img3">
-            <img id = "img3" src = "img/sapatinho.jpg">
-        </div>
-
-        <div id = "msg_sinopse3">
-            <p>Sete anões, que na verdade são príncipes, brigam pelo beijo da princesa de sapatos vermelhos.</p>
-        </div>
-        
-        <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/X9eJG6n20SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <div id="div_botao">
-            <p>
-                <input type = "button" value = "Compre seu ingresso!" id="btnRedirecionamento" onclick="redirecionar()">
-            </p>
-        </div>
+                <img src="img/filmes/ww84-icone.jpg" alt="" class="banner-sinopse">
 
 
-    </section>
+                <p id="msg_sinopse1"> Na década de 80, a próxima aventura da Mulher Maravilha no grande ecrã a encontra
+                    em que ela enfrenta seus dois novos inimigos: Max Lord e Barbara Minerva/Cheetah.
+                </p>
 
-    <footer><br>&copy; Autoplex - Rede de Cinemas</footer>
+                <iframe width="854" height="480" class="video" id="video-1"
+                    src="https://www.youtube.com/embed/XW2E2Fnh52w" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="sinopse-box" id="filme2">
+                <h3 class="titulo-sinopse">Meu Pai</h3>
+
+                <iframe width="854" height="480" class="video" src="https://www.youtube.com/embed/4TZb7YfK-JI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="sinopse-box" id="filme3">
+                <h3 class="titulo-sinopse">Pinóquio</h3>
+
+                <iframe width="854" height="480" class="video" src="https://www.youtube.com/embed/2hqDVs2ySCA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="sinopse-box" id="filme4">
+                <h3 class="titulo-sinopse">Convenção das Bruxas</h3>
+
+                <img src="img/filmes/convencao.jpg" class="banner-sinopse">
+
+                <div id="msg_sinopse2">
+                    <p>Um menino descobre uma conferência de bruxas enquanto fica hospedado em um hotel com a avó.</p>
+                </div>
+
+                <iframe width="854" height="480" class="video" src="https://www.youtube.com/embed/yXTePS1vd-k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <div class="sinopse-box" id="filme5">
+                <h3 class="titulo-sinopse">Raya e o Último Dragão</h3>
+
+                <iframe width="854" height="480" class="video" src="https://www.youtube.com/embed/g3QGwX84e5s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="sinopse-box" id="filme6">
+                <h3 class="titulo-sinopse">O Alto da Boa Mentira</h3>
+
+                <iframe width="854" height="480" class="video" src="https://www.youtube.com/embed/6pKvuKQ2pIg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div id="div_botao">
+                <p>
+                    <input type="button" value="Compre seu ingresso!" id="btnRedirecionamento" onclick="redirecionar()">
+                </p>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="img/autoglass-logo.png" alt="Logo da Autoglass" id="logo_foot">
+        <p>&copy; Autoplex - Rede de Cinemas <br><br> Orgulhosamente desenvolvido durante o programa Autoplay -
+            Autoglass
+    </footer>
 
     <script>
-        function redirecionar(){
+        function redirecionar() {
             window.location.href = "cinema.html"
         }
     </script>
-
 </body>
+
 </html>

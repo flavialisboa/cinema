@@ -1,0 +1,51 @@
+header{
+    background: #2c2a2a ;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+
+#logo{
+    margin: 15px;
+}
+
+nav{
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav a:hover{
+    color: #4b4545;
+}
+
+footer{
+    background: #2c2a2a;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px 0 20px 0;
+}
+
+#logo_foot{
+    width: 10%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Bilheteria - Autoplex &#128253;</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bilheteria.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="caixa">
+            <h1>
+                <a href="index.html">
+                    <img alt="Logo autoplex na cor lilás" src="img/autoplex.png" width="150" height="25" id="logo">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="sinopse.html">Filmes</a></li>
+                    <li><a href="bilheteria.html">Bilheteria</a></li>
+                    <li><a href="precos.html">Preços</a></li>
+                    <li><a href="protocolos.html">Protocolos de Segurança</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="oi">
+            <h1>Rede de Cinemas Autoplex</h1>
+            <h2>Bilheteria</h2>
+        </div>
+
+
+        <section>
+
+            <div id="div_filme">
+                <p>Confira
+                    <a href="sinopse.html">aqui</a>
+                    a sinopse dos nossos filmes em exibição.
+                </p>
+                <p>Selecione o filme desejado:
+                    <select name=filmes id="selecaoFilmes">
+                        <option value="1">Mulher-Maravilha 1984
+                        <option value="2">Convenção das Bruxas
+                        <option value="3">Sapatinho Vermelho e os Sete Anões
+                    </select>
+                </p>
+            </div>
+
+            <div id="div_campos">
+                <p>Selecione o horário da sessão:<br><br>
+                    <input type="radio" name="ckHorario" id="ck_almoco" checked value="13:00">
+                    <label for="almoco">13:00</label>
+
+                    <input type="radio" name="ckHorario" id="ck_tarde" value="16:00">
+                    <label for="tarde">16:00</label>
+
+                    <input type="radio" name="ckHorario" id="ck_noite" value="18:00">
+                    <label for="noite">18:00</label>
+                </p>
+
+                <p>Quantidade de ingressos - inteira (R$20,00):
+                    <select name=inteira id="numeroEntradasInteiras">
+                        <option value="i0">0
+                        <option value="i1">1
+                        <option value="i2">2
+                        <option value="i3">3
+                    </select>
+                </p>
+
+                <p>Quantidade de ingressos - meia (R$10,00):
+                    <select name=meia id="numeroEntradasMeias">
+                        <option value="m0">0
+                        <option value="m1">1
+                        <option value="m2">2
+                        <option value="m3">3
+                    </select>
+                </p>
+            </div>
+
+            <div id="div_assentos">
+                <img id="assentos" src="img/cadeiras.jpg" alt="Imagem com mapa de assentos disponíveis.">
+            </div>
+
+            <div id="div_cadeiras">
+                <p>Selecione o assento disponível:<br><br>
+
+                    <input type="checkbox" id="ck_b" name="ckAssento" value="B 07">
+                    <label for="ck_b">B 07</label>
+
+                    <input type="checkbox" id="ck_d" name="ckAssento" value="D 10">
+                    <label for="ck_d">D 10</label>
+
+                    <input type="checkbox" id="ck_f" name="ckAssento" value="F 12">
+                    <label for="ck_f">F 12</label>
+
+                    <input type="checkbox" id="ck_h" name="ckAssento" value="H 15">
+                    <label for="ck_h">H 15</label>
+
+                    <input type="checkbox" id="ck_i" name="ckAssento" value="I 06">
+                    <label for="ck_i">I 06</label>
+
+                    <input type="checkbox" id="ck_j" name="ckAssento" value="J 03">
+                    <label for="ck_j">J 03</label>
+
+                </p>
+
+                <p>
+                    <input type="button" value="Comprar!" id="btnComprar" onclick="comprar()">
+                </p>
+            </div>
+
+            <div id="div_msg">
+                <p>Preencha os campos acima, por favor!</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="img/autoglass-logo.png" alt="Logo da Autoglass" id="logo_foot">
+        <p>&copy; Autoplex - Rede de Cinemas <br><br> Orgulhosamente desenvolvido durante o programa Autoplay -
+            Autoglass
+    </footer>
+
+    <script src='script.js'></script>
+
+</body>
+
+</html>
