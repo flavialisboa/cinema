@@ -1,0 +1,71 @@
+main{
+    background: url(../img/fundo.jpg);
+    /*background-color: #CCCCCC;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0 20px 0;
+    }
+
+#bilheteria-titulo{
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    }
+
+p{
+    margin: 20px 0;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+}
+
+#selecaoFilmes {
+    display: block;
+    margin: 10px 0;
+    width: 80%;
+    padding: 7px 10px;
+    color: #333333;
+    background-color: #fafafa;
+    border-color: rgb(77, 77, 77);
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#selecaoFilmes:focus,
+#selecaoFilmes:hover{
+    outline: none;
+    border: 1px solid #bbbbbb;
+}
+
+#assentos{
+    width: 70%;
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnRedirecionamento{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 90%;
+}

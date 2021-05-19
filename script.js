@@ -55,7 +55,7 @@ function comprar() {
         alert("Selecione a quantidade de ingressos!")
     } else {
         alert("Compra realizada!");
-        elem_msg.innerHTML = "Resumo do pedido:<br><br>Você selecionou o filme:<br>" + filme + " no horário de " + horario + ", no valor de R$ " + valorTotal + ",00. <br>Seus assentos são:<br>" + assentosEscolhidos;
+        elem_msg.innerHTML = "Resumo do pedido:<br><br>Você selecionou o filme:<br>" + filme + ", no horário de " + horario + ", no valor de R$ " + valorTotal + ",00. <br>Seus assentos são:<br>" + assentosEscolhidos;
     }
 }
 

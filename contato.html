@@ -5,8 +5,9 @@
     <meta charset='utf-8'>
     <title>Contato - Autoplex &#128253;</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/header-footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -16,7 +17,7 @@
         <div class="caixa">
             <h1>
                 <a href="index.html">
-                    <img alt="Logo autoplex na cor lilás" src="img/autoplex.png" width="150" height="25" id="logo">
+                    <img alt="Logo autoplex na cor lilás" src="img/autoplex.png" id="logo">
             </h1>
 
             <nav>
@@ -32,78 +33,54 @@
     </header>
 
     <main>
-        <form>
-            <label for="nomesobrenome">Nome</label>
-            <input type="text" id="nomesobrenome" class="input-padrao" required>
+        <h2 id="faq">FAQ/FALE CONOSCO</h2>
+        
+        <div id="contato-mapa">       
+            <div>
+                <form>
+                    
+                    <label for="nomesobrenome">Nome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" placeholder="Nome" required>
+            
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    
+                    <div id="select-local">
+                        <fieldset>
+                            <select class="select-item">
+                                <option>Selecione um estado</option>
+                                <option>ES</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <select class="select-item">
+                                <option>Selecione uma cidade</option>
+                                <option>Vitória</option>
+                                <option>Vila Velha</option>
+                            </select>
+                        </fieldset>
+                    </div>
+        
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+        
+        
+                    <label class="checkbox"><input type="checkbox" checked>Como gostaria de receber nossas novidades por
+                        e-mail?</label>
+        
+                    <input type="submit" value="Enviar formulário" class="enviar">
+                </form>
+            </div>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+            <div class="mapa">
+                <p class="mapa-txt">Localização</p>
 
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1195.4064633609128!2d-40.31977284050408!3d-20.351206202883134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83de2fa60d6ad%3A0x9d32a24c5e39f034!2sAutoglass!5e0!3m2!1spt-BR!2sbr!4v1619831593951!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-
-            <fieldset>
-                <legend>Como prefere o nosso contato?</legend>
-                <label for="radio-email"><input type="radio" name="contato" value="email"
-                        id="radio-email">E-mail</label>
-
-                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
-                        id="radio-telefone">Telefone</label>
-
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
-                        checked>WhatsApp</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Selecione um assunto</legend>
-                <select>
-                    <option>Manhã</option>
-                    <option>Tarde</option>
-                    <option>Noite</option>
-                </select>
-            </fieldset>
-
-            <label class="checkbox"><input type="checkbox" checked>Como gostaria de receber nossas novidades por
-                e-mail?</label>
-
-            <input type="submit" value="Enviar formulário" class="enviar">
-        </form>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Dia</th>
-                    <th>Horário</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Segunda</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-                <tr>
-                    <td>Quarta</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-                <tr>
-                    <td>Sexta</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <section class="mapa">
-            <p class="mapa-txt">Localização</p>
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1195.4064633609128!2d-40.31977284050408!3d-20.351206202883134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83de2fa60d6ad%3A0x9d32a24c5e39f034!2sAutoglass!5e0!3m2!1spt-BR!2sbr!4v1619831593951!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-        </section>
-
+            </div>
+        </div>
     </main>
 
     <footer>
