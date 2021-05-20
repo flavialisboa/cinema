@@ -9,8 +9,9 @@ campoFiltro.addEventListener("input", function(){
             var filme = filmes[i];
             var pNome = filme.querySelector(".titulo-filmes");
             var nomeFilme = pNome.textContent;
+            var expressaoRegular = new RegExp(this.value, "i");
             
-            if(nomeFilme != this.value){
+            if(!expressaoRegular.test(nomeFilme)){
                 filme.classList.add("invisivel");
             }else{
                 filme.classList.remove("invisivel");
