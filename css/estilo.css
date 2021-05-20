@@ -34,6 +34,22 @@
     padding: 40px 10px;
 }
 
+.campo-busca{
+    text-align: center;
+    margin: 10px 0;
+}
+
+#filtrar-filmes{
+    width: 200px;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+}
+
+.invisivel{
+    display: none;
+}
+
 .filmes-escolha-principal{
     width: 60%;
 	margin: 20px auto;
