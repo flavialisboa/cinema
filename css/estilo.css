@@ -161,3 +161,14 @@ body{
     height: 100%;
     border: none;
 }
+
+#local-arrow{
+    text-align: right;
+}
+
+#arrow{
+    width: 5%;
+    z-index: 199;
+    position: fixed;
+    top: 80%;
+}
