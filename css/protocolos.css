@@ -1,0 +1,54 @@
+.protocolos{
+    background: url(../img/film.png);
+    background-size: 2200px 1065px;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#covid{
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 10%;
+}
+
+.aviso{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#ei{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-protocolos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.icone-protocolos{
+    width: 10%;
+}
+
+.txt-protocolos{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#vejo-em-breve{
+    font-size: 28px;
+    padding: 60px 0;
+    text-decoration: underline;
+}
