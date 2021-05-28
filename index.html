@@ -35,38 +35,81 @@
 
     <main>
 
-        <div class="slideshow-container">
+        <section class="caroulsel">
+            <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <a href="sinopse.html#filme11">
-                    <img src="img/carousel/nomadland-banner.jpg" class="img-slide" style="width:100%">
-                </a>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="sinopse.html#filme11">
+                        <img src="img/carousel/nomadland-banner.jpg" class="img-slide" style="width:100%">
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a href="sinopse.html#filme5">
+                        <img src="img/carousel/raya-banner.png" class="img-slide" style="width:100%">
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <a href="sinopse.html#filme1">
+                        <img src="img/carousel/ww-banner.jpg" class="img-slide" style="width:100%">
+                    </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <a href="sinopse.html#filme5">
-                    <img src="img/carousel/raya-banner.png" class="img-slide" style="width:100%">
-                </a>
+            <div style="text-align:center" class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
+        </section>
 
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <a href="sinopse.html#filme1">
-                    <img src="img/carousel/ww-banner.jpg" class="img-slide" style="width:100%">
-                </a>
+        <section>
+            <div class="donation">
+                <img src="img/doacao.png" alt="" id="donation-banner">
             </div>
+            <img src="img/cruellabanner.jpg" alt="" class="banner">
+            </div>
+        </section>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+        <section class="servicos">
+            <h2 class="title-index">Serviços</h2>
+            <div class="links-home">
 
-        <div style="text-align:center" class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+
+
+                <div class="service-box">
+                    <a href="protocolos.html">
+                        <img src="img/index/mascara.jpg" class="img-servicos" alt="">
+                    </a>
+                        <div class="text" id="text-protocols">PROTOCOLOS</div>
+                </div>
+
+                <div class="service-box">
+                    <a href="sinopse.html">
+                        <img src="img/index/pipoca.jpg" class="img-servicos" alt="">
+                    </a>
+                    <div class="text" id="text-films">SINOPSES</div>
+                </div>
+
+                <div class="service-box">
+                    <a href="precos.html">
+                        <img src="img/index/oculos.jpg" class="img-servicos" alt="">
+                    </a>
+                    <div class="text" id="text-services">SERVIÇOS</div>
+                </div>
+        </section>
+
+        <div class="redirect-contact">
+            <p id="schedule">Receba a programação semanal por e-mail</p>
+            <a id="schedule-button" href="contato.html">Contato</a>
         </div>
 
         <footer>

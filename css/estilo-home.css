@@ -1,4 +1,10 @@
-* {box-sizing:border-box}
+* {
+  box-sizing:border-box;
+}
+
+main{
+  background: #f5f5f5;
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -71,6 +77,103 @@
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.donation{
+  text-align: center;
+}
+
+#donation-banner{
+  width: 60%;
+}
+
+.servicos{
+  margin: 0 30px 50px;
+}
+
+.title-index{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.links-home{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-box{
+  position: relative;
+}
+
+.service-box .text{
+  color: white;
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#text-protocols, #text-services{
+  top: 30px;
+  right: 25px;
+}
+
+#text-films{
+  bottom: 25px;
+  right: 25px;
+  color: black;
+}
+
+.img-servicos{
+  object-fit: cover;
+  width: 25em;
+  height: 25em;
+  border-radius: 30px;
+}
+
+.img-servicos:hover{
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
+.redirect-contact{
+  background: #52676B;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#schedule{
+  color: white;
+  font-size: 2em;
+}
+
+#schedule-button{
+  margin: 30px;
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2em;
+  border-color: white;
+}
+
+#schedule-button:hover{
+  color: #52676B;
+  background: white;
+  transition-duration: 0.3s;
 }
 
 @-webkit-keyframes fade {
