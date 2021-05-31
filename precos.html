@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/header-footer.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo-home.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/precos.css'>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -19,7 +19,6 @@
                 <a href="index.html">
                     <img alt="Logo autoplex na cor lilás" src="img/autoplex.png" id="logo">
                 </a>
-                    <!--<img src="img/autoplex.png" id="logo">-->
             </h1>
 
             <nav>
@@ -34,9 +33,143 @@
         </div>
     </header>
 
-
     <main>
-        Teste
+        <div class="prices-title">
+            <img src="img/money.png" id="money" alt="">
+            <h2 class="main-title">Preços</h2>
+        </div>
+
+        <section class="main-prices">
+            <button class="day-button" type="button" id="weekdays-btn">Dia de Semana</button>
+            <button class="day-button" type="button" id="weekend-btn">Fim de Semana</button>
+            <button class="day-button" type="button" id="holiday-btn">Feriados</button>
+
+            <div id="dia-semana">
+                <h2 class="table-title">Dia de Semana</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modo</th>
+                            <th>Meia-Entrada</th>
+                            <th>Inteira</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2D</td>
+                            <td>R$ 10,00</td>
+                            <td>R$ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>3D</td>
+                            <td>R$ 14,00</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="fim-semana">
+                <h2 class="table-title">Fim de Semana</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modo</th>
+                            <th>Meia-Entrada</th>
+                            <th>Inteira</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2D</td>
+                            <td>R$ 15,00</td>
+                            <td>R$ 30,00</td>
+                        </tr>
+                        <tr>
+                            <td>3D</td>
+                            <td>R$ 18,00</td>
+                            <td>R$ 36,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="feriados">
+                <h2 class="table-title">Feriados</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modo</th>
+                            <th>Meia-Entrada</th>
+                            <th>Inteira</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2D</td>
+                            <td>R$ 18,00</td>
+                            <td>R$ 36,00</td>
+                        </tr>
+                        <tr>
+                            <td>3D</td>
+                            <td>R$ 22,00</td>
+                            <td>R$ 44,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <img class="banner-split" src="img/azular.jpg" alt="">
+
+        <section class="main-discount">
+            <h2 class="main-title">Quem tem direito à Meia-Entrada:</h2>
+
+            <div class="discount-box">
+                <div class="right-discount">
+                    <h3 class="type-discount">Estudantes</h3>
+                    <p class="description-discount">O benefício é vigente para alunos da educação básica e educação
+                        superior, conforme previsto no Título V da Lei no 9.394, de 20.12.1996.</p>
+                </div>
+
+                <div class="right-discount">
+                    <h3 class="type-discount">Idosos</h3>
+                    <p class="description-discount">A partir de 60 (sessenta) anos, conforme Lei Federal 10.741/2003
+                        (Estatuto do Idoso). A comprovação deve ser feita mediante apresentação de um documento oficial.
+                    </p>
+                </div>
+
+                <div class="right-discount">
+                    <h3 class="type-discount">Crianças</h3>
+                    <p class="description-discount">A partir de 03 (três) até 12 (doze) anos. A comprovação deve ser
+                        feita mediante apresentação de um documento oficial.</p>
+                </div>
+
+                <div class="right-discount">
+                    <h3 class="type-discount">PcD e Acompanhante</h3>
+                    <p class="description-discount">Pessoa que possui impedimento de longo prazo de natureza física,
+                        mental, intelectual ou sensorial que, em interação com uma ou mais barreiras, pode obstruir sua
+                        participação plena e efetiva na sociedade em igualdade de condições com outras pessoas.</p>
+                </div>
+
+                <div class="right-discount">
+                    <h3 class="type-discount">Doadores de Sangue</h3>
+                    <p class="description-discount">O benefício de meia-entrada é garantido para doadores de sangue que
+                        sigam os devidos registrados nos hemocentros dos estados e municípios que possuam leis vigentes
+                        para a concessão do benefício.</p>
+                </div>
+
+                <div class="right-discount">
+                    <h3 class="type-discount">Jovem de Baixa Renda</h3>
+                    <p class="description-discount">Pessoa com idade entre 15 (quinze) e 29 (vinte e nove) anos,
+                        integrante de família com renda mensal de até 02 (dois) salários mínimos, inscrita no Cadastro
+                        Único para Programas Sociais do Governo Federal.</p>
+                </div>
+            </div>
+        </section>
 
 
         <footer>
@@ -45,9 +178,7 @@
                 Autoglass
         </footer>
 
-        <script>
-
-        </script>
+        <script src="js/ocultaTabela.js"></script>
     </main>
 </body>
 

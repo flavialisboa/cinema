@@ -1,0 +1,127 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-prices{
+    width: 60%;
+    margin: 40px auto;
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.prices-title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#money{
+    width: 90px;
+    float: left;
+}
+
+.main-title{
+    font-size: 25px;
+    padding: 40px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.day-button{
+    width: 10em;
+    height: 3em;
+    margin: 0 0.8em 1em 0;
+    border: none;
+    background: #A0B4B8;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.day-button:hover{
+    background: #cecccc;
+    transition: 0.5s;
+}
+
+.table-title{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+table {
+    margin: 0;
+    font-weight: bold;
+    width: 60%;
+    height: 9em;
+}
+
+thead {
+    background: #605e69;
+	color: white;
+    text-transform: uppercase;
+    height: 3em;
+}
+
+td, th {
+    padding: 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.hide{
+    display: none;
+}
+
+.banner-split{
+    object-fit: cover;
+    height: 45vh;
+    width: 100%;
+    object-position: center 68%;
+    filter: brightness(0.9);
+}
+
+.main-discount{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.right-discount{
+    margin: 10px 0;
+}
+
+.discount-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
+
+.type-discount{
+    font-size: 22px;
+    background: #A0B4B8;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px;
+    color: white;
+}
+
+.description-discount{
+    background: #cecccc;
+    font-size: 16px;
+    width: 200px;
+    padding: 15px;
+    line-height: 22px;
+    height: 245px;
+}

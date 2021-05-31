@@ -37,14 +37,12 @@ main{
 }
 
 .icone-protocolos{
-    width: 10%;
+    width: 25%;
 }
 
 .txt-protocolos{
     font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
 }
 
 #vejo-em-breve{

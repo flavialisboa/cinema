@@ -1,0 +1,33 @@
+.redirect-contact{
+    background: #52676B;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+  
+#schedule{
+color: white;
+font-size: 2em;
+}
+
+#schedule-button{
+margin: 30px;
+color: white;
+padding: 15px 40px;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+border-style: solid;
+border-width: 2px;
+border-radius: 2em;
+border-color: white;
+}
+
+#schedule-button:hover{
+color: #52676B;
+background: white;
+transition-duration: 0.3s;
+}

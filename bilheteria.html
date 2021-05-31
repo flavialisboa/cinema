@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bilheteria.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/header-footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/schedule.css'>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
@@ -34,11 +35,8 @@
     </header>
 
     <main>
-        <div id="bilheteria-titulo">
-            <h1>Rede de Cinemas Autoplex</h1>
-            <h2>Bilheteria</h2>
-        </div>
 
+        <h2 id="bilheteria-titulo">Bilheteria</h2>
 
         <section>
 
@@ -49,12 +47,18 @@
                 </p>
                 <p>Selecione o filme desejado:
                     <select name=filmes id="selecaoFilmes">
-                        <option value="1">Mulher-Maravilha 1984</option>
-                        <option value="2">Meu Pai</option>
-                        <option value="3">Pinóquio</option>
-                        <option value="4">Convenção das Bruxas</option>
-                        <option value="5">Raya e o Último Dragão</option>
-                        <option value="6">O Alto da Boa Mentira</option>
+                        <option value="1">A Viúva das Sombras</option>
+                        <option value="2">Convenção das Bruxas</option>
+                        <option value="3">Godzilla vs Kong</option>
+                        <option value="4">Meu Pai</option>
+                        <option value="5">Minari</option>
+                        <option value="6">Mulher-Maravilha 1984</option>
+                        <option value="7">Mundo em Caos</option>
+                        <option value="8">Nomadland</option>
+                        <option value="9">O Alto da Boa Mentira</option>
+                        <option value="10">Pinóquio</option>
+                        <option value="11">Raya e o Último Dragão</option>
+                        <option value="12">Tom & Jerry - O Filme</option>
                     </select>
                 </p>
             </div>
@@ -95,27 +99,49 @@
             </div>
 
             <div id="div_cadeiras">
-                <p>Selecione o assento disponível:<br><br>
+                <p>Selecione o assento disponível:<br><br></p>
 
-                    <input type="checkbox" id="ck_b" name="ckAssento" value="B 07">
-                    <label for="ck_b">B 07</label>
+                    <div>
+                        <input type="checkbox" id="ck_a" name="ckAssento" value="A 04">
+                        <label for="ck_a">A 04</label>
+    
+                        <input type="checkbox" id="ck_b" name="ckAssento" value="B 07">
+                        <label for="ck_b">B 07</label>
 
-                    <input type="checkbox" id="ck_d" name="ckAssento" value="D 10">
-                    <label for="ck_d">D 10</label>
+                        <input type="checkbox" id="ck_c" name="ckAssento" value="B 09">
+                        <label for="ck_c">B 09</label>
+    
+                        <input type="checkbox" id="ck_d" name="ckAssento" value="D 10">
+                        <label for="ck_d">D 10</label>
+                    </div>
 
-                    <input type="checkbox" id="ck_f" name="ckAssento" value="F 12">
-                    <label for="ck_f">F 12</label>
+                    <div>
+                        <input type="checkbox" id="ck_e" name="ckAssento" value="E 03">
+                        <label for="ck_f">E 03</label>
 
-                    <input type="checkbox" id="ck_h" name="ckAssento" value="H 15">
-                    <label for="ck_h">H 15</label>
+                        <input type="checkbox" id="ck_f" name="ckAssento" value="F 12">
+                        <label for="ck_f">F 12</label>
 
-                    <input type="checkbox" id="ck_i" name="ckAssento" value="I 06">
-                    <label for="ck_i">I 06</label>
+                        <input type="checkbox" id="ck_g" name="ckAssento" value="G 11">
+                        <label for="ck_f">G 11</label>
+    
+                        <input type="checkbox" id="ck_h" name="ckAssento" value="H 15">
+                        <label for="ck_h">H 15</label>
+                    </div>
 
-                    <input type="checkbox" id="ck_j" name="ckAssento" value="J 03">
-                    <label for="ck_j">J 03</label>
+                    <div>
+                        <input type="checkbox" id="ck_i" name="ckAssento" value="I 06">
+                        <label for="ck_i">I 06</label>
+    
+                        <input type="checkbox" id="ck_j" name="ckAssento" value="J 03">
+                        <label for="ck_j">J 03</label>
 
-                </p>
+                        <input type="checkbox" id="ck_j" name="ckAssento" value="K 09">
+                        <label for="ck_k">K 09</label>
+
+                        <input type="checkbox" id="ck_j" name="ckAssento" value="L 14">
+                        <label for="ck_l">L 14</label>
+                    </div>
 
                 <p>
                     <input type="button" value="Comprar!" id="btnComprar" onclick="comprar()">
@@ -127,7 +153,13 @@
             </div>
 
         </section>
+
     </main>
+    
+    <div class="redirect-contact">
+        <p id="schedule">Receba a programação semanal por e-mail</p>
+        <a id="schedule-button" href="contato.html">Contato</a>
+    </div>
 
     <footer>
         <img src="img/autoglass-logo.png" alt="Logo da Autoglass" id="logo_foot">
@@ -135,7 +167,8 @@
             Autoglass
     </footer>
 
-    <script src='js/script.js'></script>
+    <script src='js/escolhaFilme.js'></script>
+    <script src="js/script.js"></script>
 
 </body>
 

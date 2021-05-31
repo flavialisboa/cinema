@@ -1,29 +1,29 @@
 main{
-    background: url(../img/fundo.jpg);
-    /*background-color: #CCCCCC;*/
+    background-color: #f5f5f5;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 18px;
-    padding: 20px 0 20px 0;
+    padding: 40px 0 60px;
     }
 
 #bilheteria-titulo{
-    color: white;
     text-align: center;
     margin: 20px 0;
-    }
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
 
 p{
     margin: 20px 0;
 }
 
 section{
-    background: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    border: 2px solid black;
+    padding: 40px;
+    width: 40%;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
 }
 
 #selecaoFilmes {
@@ -49,7 +49,7 @@ section{
 }
 
 #assentos{
-    width: 70%;
+    width: 60%;
     padding-top: 30px;
     display: block;
     margin-left: auto;
@@ -69,3 +69,4 @@ section{
     margin-bottom: 50px;
     width: 90%;
 }
+
